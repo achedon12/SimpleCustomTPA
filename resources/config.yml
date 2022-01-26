@@ -1,0 +1,45 @@
+#   _____          _               _______ _____
+#  / ____|        | |             |__   __|  __ \ /\
+# | |    _   _ ___| |_ ___  _ __ ___ | |  | |__) /  \
+# | |   | | | / __| __/ _ \| '_ ` _ \| |  |  ___/ /\ \
+# | |___| |_| \__ \ || (_) | | | | | | |  | |  / ____ \
+#  \_____\__,_|___/\__\___/|_|_|_| |_|_|  |_|_/_/    \_\  __ ___
+# |  _ \            /\       | |            | |          /_ |__ \
+# | |_) |_   _     /  \   ___| |__   ___  __| | ___  _ __ | |  ) |
+# |  _ <| | | |   / /\ \ / __| '_ \ / _ \/ _` |/ _ \| '_ \| | / /
+# | |_) | |_| |  / ____ \ (__| | | |  __/ (_| | (_) | | | | |/ /_
+# |____/ \__, | /_/    \_\___|_| |_|\___|\__,_|\___/|_| |_|_|____|
+#        __/ |
+#        |___/
+
+# Do not touch the plugin version
+version: 1.0.0
+
+# Set your prefix for all your orders here
+prefix: "§b[§eCustomTPA§b] §r"
+
+# Set up your messages for all your orders here
+message:
+  tpa:
+    confirm: "You have send a teleportation request to {player}"
+    send: "{player} have send you a teleportation request"
+  accept:
+    confirm: "You have accepted {player} request"
+    send: "{player} has accepted your request"
+  refuse:
+    confirm: "You have refused {player} request"
+    send: "{player} has refused"
+  teleport: "You have been teleported to {player}"
+  tpahere:
+    send: "{player} has send you a teleportation request to him"
+    confirm: "you have send a request to teleport {player} to you"
+
+# Set the time before the teleportation request is deleted here
+timeBeforeDeleteRequest: 30
+
+# Set the time before teleportation here
+# If you want the teleportation to be done directly, please put "false"
+delayBeforeTeleportation:
+  set: "true"
+  time: 3
+  message: "time before tp: {time}"

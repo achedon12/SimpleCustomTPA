@@ -1,0 +1,7 @@
+name: customTPA
+version: 1.0.0
+main: achedon\customtpa\tpa
+api: [4.0.0]
+author: Achedon12
+
+
