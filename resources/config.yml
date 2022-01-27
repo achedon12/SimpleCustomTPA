@@ -33,6 +33,7 @@ message:
   tpahere:
     send: "{player} has send you a teleportation request to him"
     confirm: "you have send a request to teleport {player} to you"
+  noRequest: "You don't have any request for the moment"
 
 # Set the time before the teleportation request is deleted here
 timeBeforeDeleteRequest: 30

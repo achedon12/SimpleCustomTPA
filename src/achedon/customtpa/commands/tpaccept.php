@@ -29,7 +29,7 @@ class tpaccept extends Command{
                     $sender->sendMessage(messageManager::message("$args[0] is not a player"));
                 }else{
                     if(!isset(tpa::$REQUEST[$sender->getName()])){
-                        $sender->sendMessage(messageManager::message("You do not have request for the moment"));
+                        $sender->sendMessage(messageManager::message($cfg->getNested("message.noRequest")));
                     }else{
                         (string)$method = tpa::$REQUEST[$sender->getName()];
                         $messageToSend = $cfg->getNested("message.accept.send");

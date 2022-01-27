@@ -29,7 +29,7 @@ class tpadeny extends Command{
                     $sender->sendMessage(messageManager::message("$args[0] is not a player"));
                 }else{
                     if(!isset(tpa::$REQUEST[$sender->getName()])){
-                        $sender->sendMessage(messageManager::message("You do not have request for the moment"));
+                        $sender->sendMessage(messageManager::message($cfg->getNested("message.noRequest")));
                     }else{
                         $messageToSend = $cfg->getNested("message.refuse.send");
                         $messageConfirm = $cfg->getNested("message.refuse.confirm");
