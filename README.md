@@ -1,6 +1,6 @@
 # About
 
-!icon(icon.png)
+![icon](icon.png)
 
 [FR] Plugin de téléportation customisable
 
