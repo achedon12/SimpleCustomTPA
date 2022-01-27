@@ -15,10 +15,9 @@
 
 ## Contact
 
+Made with ❤ by [Achedon](https://github.com/leoderoin)
+
 discord: achedon12#0034
 
-[my minecraft server](https://discord.gg/gmEyCzUJg2)
 
-[my github](https://github.com/leoderoin)
 
-[my discord shop](https://discord.gg/Mnc6SMr9zB)
