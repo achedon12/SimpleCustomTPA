@@ -1,5 +1,7 @@
 # About
 
+![image](images.png)
+
 [FR] Plugin de téléportation customisable
 
 [ENG] Custom teleportation plugin 
