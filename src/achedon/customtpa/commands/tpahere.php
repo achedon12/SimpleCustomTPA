@@ -28,8 +28,8 @@ class tpahere extends Command{
                    $sender->sendMessage(messageManager::message("$args[0] is not a player"));
                }else{
                    tpa::getInstance()->getScheduler()->scheduleRepeatingTask(new delay($sender,(int)$cfg->get("timeBeforeDeleteRequest")),20);
-                   $messageToSend = $cfg->getNested("message.request.send");
-                   $messageConfirm = $cfg->getNested("message.request.confirm");
+                   $messageToSend = $cfg->getNested("message.tpahere.send");
+                   $messageConfirm = $cfg->getNested("message.tpahere.confirm");
                    $sender->sendMessage(str_replace("{player}",$target->getName(),messageManager::message($messageConfirm)));
                    $target->sendMessage(str_replace("{player}",$sender->getName(),messageManager::message($messageToSend)));
                    tpa::$REQUEST[$target->getName()] = "tpahere";
